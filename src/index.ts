@@ -1,15 +1,12 @@
-class C6Bank{
-    nome: string
-    id: number
-    senha: number
-    saldo = 0
-    constructor(nomeFornecido: string, idFornecido: number, senhaFornecida: number) {
-        this.nome = nomeFornecido
-        this.id = idFornecido
-        this.senha = senhaFornecida
-    }
-}
+import { transaction } from "./classes/transaction"
+import { C6Bank } from "./classes/BankAccount"
 
-const contaLucas = new C6Bank("Lucas", 928172198, 672562)
 
-console.log(contaLucas.nome)
+const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
+const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
+const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
+const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
+const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
+const julio1 = new C6Bank("Julio", 98127198, 8927129817982)
+const rem1 = new transaction(1000, julio1.id, lucas1.id)
+console.log(rem1)
