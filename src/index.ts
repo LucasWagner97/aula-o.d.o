@@ -2,11 +2,12 @@ import { transaction } from "./classes/transaction"
 import { C6Bank } from "./classes/BankAccount"
 
 
-const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
-const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
-const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
-const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
-const lucas1 = new C6Bank("Lucas", 9082192018, 29108710928)
-const julio1 = new C6Bank("Julio", 98127198, 8927129817982)
-const rem1 = new transaction(1000, julio1.id, lucas1.id)
-console.log(rem1)
+const lucas1 = new C6Bank("Lucas", 9082192018, 1)
+const julio1 = new C6Bank("Julio", 2897192872, 2)
+
+function realizaTransacao (valores: number, idDestin: number, idRemem: number){
+    const tr1 = new transaction(valores, idDestin, idRemem)
+
+    return tr1
+}
+console.log (realizaTransacao(100, 9082192018, 2897192872))
